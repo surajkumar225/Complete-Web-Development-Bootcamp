@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SURK Music</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css Reset */
+    body{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('https://cdn.wallpapersafari.com/37/23/J95UNb.jpg');
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid green; */
+        position: absolute;
+        left: 60px;
+        top: 10px;
+
+    }
+    .left img{
+        width: 80px;
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: auto;
+        /* border: 2px solid red; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 28px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        font-family: 'Bebas Neue', cursive;
+        margin: 0px 9px;
+        /* background-color: rgb(111, 136, 127); */
+        color: black;  
+        padding: 4px 20px;
+        border: 2px solid rgb(27, 104, 204);  
+        background-position: center;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        }
+        .btn:hover{
+             background-color: brown;
+        }
+        .search{
+            float: left;
+            /* background-color: gray; */
+            color: rgb(248, 244, 244);
+            padding: 0px 185px;
+            margin: auto;           
+        }
+        .container{
+            border: 2px solid teal; 
+            margin: 126px 400px; 
+            padding: 75px;
+            width: 33%;
+            font-size: 17px;
+            border-radius: 28px;
+            color: salmon;
+        }
+        .form-group input{
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            font-size: 25px;
+            margin: 3px auto;
+            border-radius: 8px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 30%;
+            margin: auto;
+
+        }
+        .bottom img{
+            display: block;
+            width: 30px;  
+            margin: 0px 100px;         
+        }
+</style>
+<body>
+    <header class="header">
+        <!-- !--- left box for logo -->
+        <div class="left">
+            <img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/music-logo-design.jpg" alt="">
+          <div> SURK Music</div>
+        </div>
+        <!-- !---mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ARTIST</a></li>
+                <li><a href="#">ALBUM</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">TABS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">SHOP</a></li>
+              </ul>
+        </div>
+        <!-- !----right box for buttons -->
+        <div class="right">
+            <button class="btn">MUSIC STORE</button>
+        </div>
+    </header>
+    <div class="search">
+        <input type="text" name="search" id="search" placeholder="Search for songs, artist, albums....">
+    </div>
+    <div class="container">
+        <h1 style="color: rgb(219, 77, 101);"> Happy Rythem of Life</h1>
+    <h3 style="color: white;">There are many variations of passanges of Lorem lpsum available but the majority have to suffer alteration.</h3>
+        <form action="noaction.php">
+            <!-- <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div> -->  
+            <header class="header">
+                <div class="bottom">
+                    <img src="https://thumbs.dreamstime.com/b/apple-logo-19106337.jpg" alt="">  
+            <button class="btn">Google store</button>
+            <button class="btn">Apple store</button> 
+            </header>       
+        </form>
+    </div>   
+</body>
+</html>
