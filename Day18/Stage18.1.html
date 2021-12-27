@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 50px;
+            text-align: center;
+            background-color: rgb(19, 20, 19);
+            color: goldenrod;
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+            #box1{
+                display: block;
+                background-color: saddlebrown;
+            }
+        }
+
+        @media only screen and (min-width:300px){
+            #box2{
+                display: block;
+                background-color: rgb(17, 104, 75);
+            }
+        }
+
+            @media (min-width:500px) and (max-width:800px){
+            #box3{
+                display: block;
+                color: rgb(216, 20, 20);
+                background-color: royalblue;
+            }
+        }
+
+        @media (min-width:800px){
+            #box4{
+                display: block;
+                background-color: firebrick;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">It's Tony</div>
+    <div class="box" id="box2">It's Captain</div>
+    <div class="box" id="box3">It's Thor</div>
+    <div class="box" id="box4">It's Spider man</div>
+    
+</body>
+</html>
