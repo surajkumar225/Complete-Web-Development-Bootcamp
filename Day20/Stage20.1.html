@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 32px;
+            /* border: 2px solid rgb(22, 5, 173); */
+            margin: 23px 32px;
+            background-color: rgb(66, 184, 144);
+                          /*x , y, Blur-radius, Spread-radius, Color*/
+            /* box-shadow: 10px 13px 10px 34px rgba(107, 81, 17, 30); */
+            box-shadow: inset 20px 30px rgb(4, 44, 54), 15px 25px rgb(174, 196, 78);
+        }
+        .card h2{
+            text-shadow: 3px 4px rgb(240, 241, 234); /*x, y, Blur*/
+        }
+    </style>      
+</head>
+<body>
+    <div class="container">
+        <!-- div.card#car-$*3  -->
+        <div class="card" id="card1">
+             <h2>Hello There, We have eyes on you!</h2> 
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat expedita porro eaque nam iusto molestias! Facilis, illo earum culpa iure voluptatibus aspernatur soluta, blanditiis adipisci illum odio debitis odit commodi aliquid libero, eius dolorum.</p>
+        </div>
+        <div class="card" id="card2">
+             <h2>Do not Escape</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto temporibus dolorem eius quas similique, ducimus, repudiandae sed ratione pariatur quae, dolore sint quidem reprehenderit impedit officia odio animi necessitatibus. Placeat architecto soluta qui!</p>
+        </div>
+        <div class="card" id="card3">
+             <h2>Need Help?</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias aliquam autem libero odit et necessitatibus dolores exercitationem corrupti ea dolorum sunt ex corporis tempore assumenda animi in nemo fugiat, quod repellendus, eveniet asperiores?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

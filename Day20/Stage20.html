@@ -21,7 +21,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -1; /*Cover the whole screen */
             opacity: 0.8; /* Makes the image light */
             
         }
@@ -53,18 +53,17 @@
         }
         h1{
             font-size: 4rem;
+            color: rgb(170, 170, 219);
         }
         p{
             text-align: center;
         }
-        section::before{
-            /* background-color: black; */
+         section::before{
+            content: "Welcome to Surkesm..";
+             /* background-color: black; */
             color: white;
             font-size: 30px;
             font-family: 'Moo Lah Lah', cursive;
-        }
-         section::before{
-            content: "Welcome to Surkesm..";
          }
     </style>
 </head>
@@ -88,12 +87,12 @@
             <nav class="navbar">
                 <ul class="navigation1">
                     <li class="item">Creative Concept</li>
-                    <li class="item">Amaing Design</li>
+                    <li class="item">Amazing Design</li>
                     <li class="item">Cost Effective</li>
                     <li class="item">Secure</li>
                 </ul>
             </nav>
         </header>
-    
+        <hr>   
 </body>
 </html>
