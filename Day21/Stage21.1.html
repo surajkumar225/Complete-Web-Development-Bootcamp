@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,600&family=Bebas+Neue&family=Caveat&family=Inconsolata:wght@300&family=Lobster&family=Moo+Lah+Lah&family=Padauk:wght@700&family=Prompt:wght@700&display=swap" rel="stylesheet">;
+    <style>
+        .container{
+            background-color: black;
+            margin: 2px 400px;
+            width: 800px;
+            height: 550px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-family: 'Inconsolata', monospace;
+        }
+        #box1{
+            background-color: rgba(119, 104, 104, 0.548);
+            width: 150px;
+            height: 50px;
+            position: relative;
+            border: 2px solid white;
+            /* animation-name: Surk1; */
+            animation-name: Surk2;
+            animation-duration: 5s;
+            /* animation-iteration-count: infinite;  */
+            animation-iteration-count: 3;
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;  */
+            /* animation: Surk 5s ease-in 1s 12 backwards; */
+            box-shadow: inset 10px 15px 4px  rgb(153, 29, 13), 15px 15px 4px rgb(147, 206, 209);
+            text-shadow: 3px 2px rgb(216, 169, 115);
+            padding: 23px 32px;
+        }
+        #box2{
+            background-color: rgb(168, 26, 26);
+            width: 150px;
+            height: 50px;
+            display: block;
+            margin: auto;
+            position: relative;
+            border: 2px solid white;           
+            animation-name: Surk3;
+            animation-duration: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 7;
+            box-shadow: inset 10px 15px rgb(4, 44, 54), 15px 15px rgb(174, 196, 78);
+            text-shadow: 3px 2px rgb(240, 241, 234);
+            padding: 23px 32px;
+        }
+        @keyframes Surk2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+               top: 250px;
+               left: 0px;
+            }
+            75%{
+                top: 250px;
+               left: 250px;
+            }
+            100%{
+               top: 0px;
+               left: 250px;
+            }
+        }
+        @keyframes Surk3{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            35%{
+               top: 250px;
+               left: 0px;
+            }
+            75%{
+                top: 250px;
+               left: 250px;
+            }
+            100%{
+               top: 0px;
+               left: 250px;
+            }
+        }
+        @keyframes Surk {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>SIMPLE ANIMATION</h1>
+        <div class="box" id="box1">
+            <h1>BOX1</h1>
+        </div>
+        <div class="box" id="box2">
+            <h1>BOX2</h1>
+        </div>
+    </div>   
+</body>
+</html>
