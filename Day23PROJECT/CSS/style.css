@@ -101,11 +101,12 @@ img{
     font-family: 'Bebas Neue', cursive;
 }
 #home h2{
-    color: rgb(83, 16, 16);
+    color: rgb(114, 27, 27);
     text-align: center;
     font-family: 'Anton', sans-serif;
     /* font-size: 1.5rem; */
 }
+
 
 #home p{
     /* color: rgb(7, 87, 80); */
@@ -211,7 +212,7 @@ img{
 }
 
 footer{
-    background: brown;
+    background: rgb(153, 42, 42);
     color: white;
     padding: 9px 20px;
 }
@@ -240,6 +241,9 @@ footer{
     cursor: pointer;
 
 }
+.btn:hover{
+    background-color: rgba(92, 96, 117, 0.89);
+}
 .center{
     text-align: center;
 }
@@ -247,4 +251,8 @@ body{
     background-color: black;
     color: white;
 }
-
+label{
+    color: black;
+    font-weight: bold;
+    
+}

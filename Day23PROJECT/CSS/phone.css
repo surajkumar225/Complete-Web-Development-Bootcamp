@@ -21,9 +21,7 @@
  }
 
 /* Services section*/ 
-#services{
-   
-}
+
 #services.box{
    flex-direction: column;
 }
