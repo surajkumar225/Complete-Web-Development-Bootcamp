@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid + Media Quaries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+         @media only screen and (max-width:300px){
+            body{              
+                background-color: saddlebrown;
+            }
+            .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            span{
+            display: block;
+            text-align: center;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body{                
+                background-color: rgb(17, 104, 75);
+            }
+            span{
+            display: block;
+            text-align: center;
+            }
+            .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px){
+            body{               
+                background-color: royalblue;
+            }
+            .container{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside asides'
+            'footer footer footer footer';
+        }
+        span{
+            display: block;
+            text-align: center;
+            }
+        }
+        @media (min-width:800px){
+            body{                
+                background-color: firebrick;
+            }
+        }
+        .btc{
+            border: 3px solid black;
+            padding: 23px;
+            background-color: silver;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="btc">
+            Home About Services Contact
+        </nav>
+        <section class="btc">
+            <h2>Digital Innovation</h2>
+            <p> The right technology to empower your people and reinforce your process. Look for a unified platform that manages the entire application lifecycle, including program management, team collaboration, rapid application development, instant cloud deployment, and application managementCustomers tend to foster a stronger connection to a brand with a greater purpose other than making a profit. For example, Appleto bring the best user experience to its customers and not just sell electronics and compute’s vision is r software. Such an approach appeals to Apple’s current and potential customers because it shows the company’s commitment to providing greater value beyond the sale transaction. </p>
+        </section>
+        <aside class="btc">
+            <h1>Read More</h1>
+        </aside>
+    </div>
+    <footer class="btc">
+        Copyright&copy; www.financio.com. All right reserved  
+    </footer>
+    
+</body>
+</html>
