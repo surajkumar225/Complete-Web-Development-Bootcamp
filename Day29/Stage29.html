@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript / Strings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum, dolor sit amet consectetur</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quibusdam provident quam eos sunt itaque ullam enim distinctio libero vitae quae, unde repellendus quis reiciendis. Nihil aspernatur rerum eos nostrum sit vitae. Assumenda distinctio quisquam, odit vero rem culpa possimus.</p>
+    </div>
+    <script>
+        // var string = "this";
+        var string = 'this';
+        var name = 'Surk';
+        var favouritesuperhero = 'Captain America';
+        var massage = 'Surk is a Marvel fan ';
+        var temp =`${name} is a Marvel fan and his favourite superhero is ${favouritesuperhero}`;
+        console.log(string + name + massage);
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+        console.log("Hello \nWorld\nSurk\tWelcomeHome");
+        // var y =new String("this");
+        // console.log(y);
+        document.getElementById('content').innerHTML = '<h3>This is a h3 heading....</h3>'
+    </script>
+    
+</body>
+</html>
