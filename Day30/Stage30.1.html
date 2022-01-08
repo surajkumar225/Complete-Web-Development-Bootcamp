@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">Hello There! I have eyes on uh..</div>
+    <script>
+         let myVar = 34;
+         let myVar2 = "string";
+         let myVar3 = true;
+         let myVar4 = null;
+         let myVar5 = undefined;
+
+         let student = {
+             name: "Surk",
+             college: "AEC",
+             Department: "IT"
+         }
+         console.log(student);
+
+        //  let names = [1, 2, 4, "Surk", undefined];
+        let names = new Array(25, 24, 23, "Surk", undefined);
+        // let names = new Array(30);          //30 Empty undefined elements
+         console.log(names);
+         console.log(names.length);
+         names = names.sort();          //sorting
+         names.push("This is pushed");
+
+    </script>
+    
+</body>
+</html>
