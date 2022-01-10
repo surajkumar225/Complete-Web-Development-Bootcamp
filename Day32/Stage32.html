@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        Let's study Loops
+    </div>
+    <script>
+        console.log("Hey Asgardians!");
+        // let i = 0;
+        // for(i=0; i<3; i++){
+        //     console.log(i);
+        // }
+        let friends = ["Joy", "Amit", "Biplab", "Pranay", "Spiderman"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     // let element = friends[index];
+        //     console.log("Hello Friend, " + friends[index]);           
+        // }
+
+        // friends.forEach(function f(element){
+        //     console.log("Hello, " + element + " Welcome to modern JavaScript")        
+        // })
+
+        for (element of friends){
+            console.log("Hello, " + element + " Welcome to modern JavaScript")
+        }
+        
+        let student = {
+            Name: "Surk",
+            Branch: "IT",
+            Roll: 54
+        }
+        //Use this loop to iterate over objects in JS
+        for(key in student){
+            console.log(`The ${key} of student is ${student[key]}`);
+        }
+
+        //While loop in JS
+        let i = 0;
+        while(i<4){
+            console.log(`${i} i is less than 4`);
+            i++;
+        }
+
+        //do while loop in JS
+        let j = 25;
+        do{
+            console.log(`${j} i is less than 4 and we are inside do while loop #Reminder`);
+            i++;
+        }while(j<4);
+    </script>
+</body>
+</html>
