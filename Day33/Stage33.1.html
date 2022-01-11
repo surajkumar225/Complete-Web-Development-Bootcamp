@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS clearTimeOut & setTimeOut</title>
+    <style>
+        .container{
+            color: white;
+            background-color: black;
+            font-size: 55px;
+            border: 4px solid rgb(32, 181, 218);
+            border-radius: 30px;        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        Time now is <span id="time"></span>
+        
+    </div>
+    <script>
+        console.log("Here we go");
+        // setTimeOut-----Allows us to run a function once after the interval of time 
+        // clearTimeout-----Allows us to run a function repeatedly after the interval of time 
+
+        function greet(name, byeText){
+            console.log("Lets start the party " + name + " " + "come in");
+        }
+        timeOut = setTimeout(greet, 5000, "Surk", "come in"); 
+        console.log(timeOut);
+
+        // clearTimeout(timeOut);
+
+        // setTimeout(greet, 5000, "Surk");   //We cannot call any fnc. inside setTimeOut
+
+        //IntervalId = setInterval(greet, 1000, "Surk", " We are waiting for you");
+        // clearInterval(IntervalId);
+
+      function displayTime(){
+          time = new Date();
+          console.log(time);
+          document.getElementById('time').innerHTML = time;
+      }
+      setInterval((displayTime) , 1000);
+
+    </script>
+</body>
+</html> 
