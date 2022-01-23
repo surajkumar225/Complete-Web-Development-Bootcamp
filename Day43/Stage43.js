@@ -28,5 +28,3 @@ car1 = new GeneralCar("Toyota Innova", 180);
 car2 = new GeneralCar("Hyundai Creta", 80);
 car3 = new GeneralCar("Mercedes", 200);
 console.log(car1, car2, car3);
-
- 
