@@ -27,4 +27,4 @@ function getStudents(){
 
 let newStudent = {name:"Jack", language: "CPP"}
 enrollStudent(newStudent, getStudents);
-// getStudent();
+// getStudents();
