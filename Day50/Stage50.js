@@ -36,7 +36,6 @@ function buttonClickHandler() {
             console.log("Some error occured")
         }
     }
-
     // send request
     //  xhr.send();
     params = `{"name":"test34sad545","salary":"123","age":"23"}`;
@@ -72,7 +71,7 @@ function popHandler() {
             list.innerHTML = str;
         }
         else{
-            console.log("Some error occured")
+            console.log("Some error occured heheeehehe")
         }
     }
     // send request
