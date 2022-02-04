@@ -3,7 +3,7 @@ console.log("hey");
 let reg = /Surk/g;           //g--Global
 // let reg = /Surk/i;           //i----Insensitive
 
-console.log(reg)
+console.log(reg);
 console.log(reg.source);
 
 // let s = "Hey Surk! I'll be checking out in the morning..Surk";
@@ -38,9 +38,9 @@ console.log(result3);
 
 // let result4 = reg.search(s)       ---This is wrong!!
 let result4 = s.search(reg)
-console.log(result4) 
+console.log(result4); 
 
 // 5. replace() = Returns new replaced string with all the replacements if no global flag is given, first match will be replaced
 
 let result5 = s.replace(reg, 'Daw')
-console.log(result5)
+console.log(result5);
