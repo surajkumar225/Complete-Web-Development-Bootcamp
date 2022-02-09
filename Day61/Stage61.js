@@ -35,9 +35,6 @@ for (let char in myString){
     console.log(myString[char]);
 }
 
-// Quiz: Use traditional for loop to iterate through the same string
-
-
 // **********For of loop***********
 console.log("For of loop starts here")
 people = ["John", "Twit", "Steve", "Marcy", "Trash"];
