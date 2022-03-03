@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alarm Clock</title>
+    <style>
+        body{
+            color: red;
+            border: 2px solid rgb(22, 22, 22);
+            margin: 20px 20px ;
+            padding: 10px 10px;
+            width:100px;
+        }
+    </style>
+</head>
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+    <div id="clock">        
+    </div>
+</body>
+<script src="Stage81.js"></script>
+</html>
