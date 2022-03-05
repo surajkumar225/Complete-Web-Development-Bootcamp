@@ -92,9 +92,6 @@ submit.addEventListener('click', (e)=>{
         // success.classList.remove('show');
         // $('#success').alert('hide');
         $('#success').hide();
-        $('#failure').show();
-        }
-
-    
-    
+        $('#failure').show(); 
+        }  
 })
