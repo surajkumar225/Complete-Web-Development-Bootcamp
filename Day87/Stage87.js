@@ -13,8 +13,7 @@ console.log(getFileExtension('Stage87.js'));
 moveCharsForward = (str) => str.split('')
                                .map(char => String.fromCharCode(char.charCodeAt(0) + 1))
                                .join('');
-
+                               
 console.log(moveCharsForward('c'));
 console.log(moveCharsForward('p'));
 console.log(moveCharsForward('k'));
-
