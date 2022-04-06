@@ -1,5 +1,8 @@
-h1{
-    color: rgb(134, 30, 30);
+h2{
+    color: rgb(17, 201, 26);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(128, 128, 128, 0.205);
+    max-width: 54%;
 }
 p{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -23,4 +26,24 @@ li{
 a{
     text-decoration: none;
     color: black
+}
+body{
+    background-color: black;
+}
+input, textarea{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: black;
+    color: white ;
+    width: 30%;
+}
+.btn{
+    display: block;
+    padding: 5px;
+    margin: 5px 208px;
+    background-color: rgb(51, 155, 42);
+    border: 2px solid rgb(51, 155, 42);
+    border-radius: 3px;
+    color: rgb(6, 0, 0) ;
 }
