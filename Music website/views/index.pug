@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title WebMusic
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top
+       ul
+           li #[a(href="/") Home]
+           li #[a(href="/") Artist]
+           li #[a(href="/") Album]
+           li #[a(href="/") Events]
+           li #[a(href="/") Tabs]
+           li #[a(href="/") Music store]
+
+    section#introsection
+         div Feel the music
+         div.small We want you to feel like you belong here and can thrive here
+
+
+    section#premiumSection
+         h3#prem Go Premium
+         div.card
+            h3 Enjoy nonstop ad-free music listening.
+         div.card
+            h3 Take your playlists, music, and podcasts anywhere, no Wi-Fi needed. 
+
+    footer#footer
+         | our footer here
+
+    script
+      include ../static/index.js

@@ -12,7 +12,7 @@ app.use(express. urlencoded())
 app.set('view engine', 'pug') //set the template engine as pug
 app.set('views', path.join(__dirname, 'views')) //Set the views directory
 
-// Endpoints
+// Endpoints 
 app.get('/', (req, res) => {
     const con = "This is something u have never used before"
     const params = {'title': "Playing wid Pug", 'content': con}
