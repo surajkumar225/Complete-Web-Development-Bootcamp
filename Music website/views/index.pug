@@ -7,6 +7,8 @@ html
   body
     nav#navbar.top
        ul
+           div#logo
+               img(src="static/img/logo.gif")
            li #[a(href="/") Home]
            li #[a(href="/") Artist]
            li #[a(href="/") Album]
@@ -23,11 +25,25 @@ html
          h3#prem Go Premium
          div.card
             h3 Enjoy nonstop ad-free music listening.
-         div.card
+            div.card-box
+                //- div.card-img
+                //-     img(src="/static/img/1.jpg")
+                div.card-content
+                    p This is amazing...
+
+         div.card1
             h3 Take your playlists, music, and podcasts anywhere, no Wi-Fi needed. 
+            div.card-box
+                //- div.card-img
+                //-     img(src="/static/img/1.jpg")
+                div.card-content
+                    p This is Greath...
+
+    section#cultureSection
+         h3#cul Connect with music culture
 
     footer#footer
-         | our footer here
+         | footer here
 
     script
       include ../static/index.js
