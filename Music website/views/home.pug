@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+     style
+        include ../static/style.css
+
+block content
+      nav#navbar.top
+       ul
+           div#logo
+               img(src="static/img/logo.jpg")
+           li #[a(href="/") Home]
+           li #[a(href="/") Artist]
+           li #[a(href="/") Album]
+           li #[a(href="/") Events]
+           li #[a(href="/") Tabs]
+           li #[a(href="/") Music store]
+
+    section#introsection
+         div Feel the music
+         div.small We want you to feel like you belong here and can thrive here
+
+
+    section#premiumSection
+         h3#prem Go Premium
+         div.card
+            h3 Enjoy nonstop ad-free music listening
+    
+         div.card1
+            h3 Take your playlists, music, and podcasts anywhere, no Wi-Fi needed
+
+
+    section#cultureSection
+         h3#cul Connect with music culture
+         div.card2#card-img
+             img(src="/static/img/1.jpg")
+
+             div.card2#card-img
+             img(src="/static/img/2.jpg")           
+
+             div.card2#card-img
+             img(src="/static/img/4.jpg")
+
+             div.card2#card-img
+             img(src="/static/img/5.jpg")
