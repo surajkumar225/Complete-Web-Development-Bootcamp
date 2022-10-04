@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 70px;
+    width: 1519;
+    top: 0%;
+    position: sticky;
+    background-color: white;
+}
+.container1{
+    height: 82rem;
+    width: 1519px;
+    background-color: rgba(17, 17, 220, 0.57);
+}
+.right {
+    position: absolute;
+    right: 34px;
+    top: 13px;
+    display: inline-block;
+    padding: 0px 20px;
+}   
+
+.navigation {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    margin-left: 10rem;
+}
+#hack {
+    display: block;
+    padding-right: 265px;
+    font-size: 50px;
+    color: skyblue;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+#hack:hover {
+    color: rgb(47, 170, 218);
+}
+
+.item{
+    color: rgba(9, 9, 9, 0.897);
+    border-radius: 30px;
+    list-style: none;
+    padding: 0px 4px;
+    display: block;
+    margin: 27px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+#btn{
+    padding: 14px 15px;
+    margin: 0px 65px;
+    background-color: rgb(126, 145, 198);
+    border: 2px solid rgb(126, 145, 198);
+    border-radius: 5px;
+    color: rgb(253, 248, 248);
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 18px;
+}
+#btn:hover{
+    background-color: rgb(107, 107, 222);
+    color: white;
+}
+
+#hack1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 10rem;
+    font-size: 66px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+#hack2 {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 20px;
+        font-size: 28px;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1px;
+}
+#hack3{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 60px;
+        font-size: 28px;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 1px;
+}
+
+#regiss{
+        width: 240px;
+        height: 50px;
+        /* padding: 14px 5px; */
+        margin: 80px 0px;
+        margin-left: 630px;
+        background-color: rgba(252, 71, 5, 0.614);
+        border: 1px solid rgba(255, 68, 0, 0.789);
+        color: rgb(246, 239, 239);
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: bold;
+        transition: 0.4s;
+}
+#regiss:hover{
+    background-color: orangered;
+}
